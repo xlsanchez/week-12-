@@ -30,11 +30,14 @@ if score >= 90 and score < 100:
 if score >= 80 and score < 89:
     print("You got a "B")
 #if the score is between 70 and 79 inclusive print "C"
-
+if score >= 70 and score <79:
+    print("You got a "C")
 #if the score is below 70, print "D"
-
+if score >= 69 and score <60:
+    print("You got a "D"")
 #if the score is below 60 print "F"
-
+if score <60 
+    print("You failed the test.")
 
 
 
