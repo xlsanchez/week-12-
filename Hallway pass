@@ -1,0 +1,33 @@
+students = ["Alice", "Ben", "Maya", "Ben", "Zoe"]
+minutes_gone = [4, 7, 12, 3, 15]
+
+
+for i in range(len(students)):
+    name = students[i]
+    minutes = minutes_gone[i]
+
+    status = ""
+    note = ""
+
+    duplicate_count = students.count(name)
+    is_duplicate = duplicate_count > 1
+
+    if minutes > 10 or is_duplicate:
+        status = "FLAGGED"
+        if is_duplicate:
+            note = "(duplicate name detected)"
+
+    else:
+        if minutes <= 5:
+            status = "OK"
+        elif minutes <= 10:
+            status = "WARNING"
+        else:
+            status = "FLAGGED"
+
+    print(f"Student: {name}")
+    print(f"  Minutes Gone: {minutes}")
+    print(f"  Status: {status}")
+    if note:
+        print(f"  Note: {note}")
+    print() 
