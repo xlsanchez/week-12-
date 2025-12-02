@@ -12,3 +12,13 @@
 
 # Starter Code:
 
+temperature = float(input("Enter today's temperature in F: "))
+
+if temperature < -10 or temperature > 110: 
+    print ("Freezing Cold Warning!")
+elif temperature < 50: 
+    print("Little chilly, bring a sweater.")
+elif temperature < 85: 
+    print("Its warm.")
+else:
+    print("Its hot outside.")
